@@ -43,6 +43,12 @@
       }
     ]
   },
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/mintlify/guides"
+    }
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
