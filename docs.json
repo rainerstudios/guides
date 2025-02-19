@@ -22,14 +22,14 @@
         "group": "Getting Started",
         "pages": [
           "introduction",
-          "content_types",
-          "know_your_audience"
+          "content-types",
+          "know-your-audience"
         ]
       },
       {
         "group": "Building Content",
         "pages": [
-          "writing_style_tips",
+          "writing-style-tips",
           "media",
           "navigation"
         ]
