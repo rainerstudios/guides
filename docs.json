@@ -10,12 +10,14 @@
   "favicon": "/favicon.svg",
   "fonts": {
     "heading": {
-      "family": "Geist Mono"
+      "family": "IBM Plex Sans"
     },
     "body": {
-      "family": "Geist Mono"
+      "family": "IBM Plex Sans"
     }
   },
+  "style": "/style.css",
+  
   "navigation": {
     "groups": [
       {
