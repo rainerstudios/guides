@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
+  "theme": "maple",
   "name": "Mintlify Guides",
   "colors": {
     "primary": "#16A34A",
@@ -8,44 +8,44 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+  "fonts": {
+    "heading": {
+      "family": "Geist Mono"
+    },
+    "body": {
+      "family": "Geist Mono"
+    }
+  },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guide to Technical Writing",
-
-            "pages": [
-              "introduction",
-              "content_types",
-              "know_your_audience",
-              "writing_style_tips",
-              "media",
-              "navigation",
-              "maintenance",
-              "success"
-            ]
-          
+        "group": "Getting Started",
+        "pages": [
+          "introduction",
+          "content_types",
+          "know_your_audience"
+        ]
+      },
+      {
+        "group": "Building Content",
+        "pages": [
+          "writing_style_tips",
+          "media",
+          "navigation"
+        ]
+      },
+      {
+        "group": "Post-Launch",
+        "pages": [
+          "maintenance",
+          "success"
+        ]
       }
     ]
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Mintlify Docs",
-        "href": "https://mintlify.com/docs?utm_source=docs&utm_medium=organic&utm_campaign=technical-writing-guide"
-      },
-      {
-        "label": "Blog",
-        "href": "https://mintlify.com/blog?utm_source=docs&utm_medium=organic&utm_campaign=technical-writing-guide"
-      },
-      {
-        "label": "Talk to our team",
-        "href": "mailto:sales@mintlify.com"
-      }
-    ]
   },
   "footer": {
     "socials": {
@@ -54,10 +54,9 @@
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   },
-
-  "seo":{
-      "metatags": {
-        "og:image": "images/ogimage"
-      }
+  "seo": {
+    "metatags": {
+      "og:image": "images/ogimage"
+    }
   }
 }

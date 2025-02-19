@@ -3,9 +3,11 @@ title: 'Content Types'
 description: 'Focus writing based on content type'
 ---
 
-Documentation needs to be organized around the specific goal you're trying to help the user achieve. 
+<Tip>
+  In this article, you’ll learn the different content types, when to use each one, and how to approach writing each type.
+</Tip>
 
-In this article, you’ll learn the different content types, when to use each one, and how to approach writing each type.
+Documentation needs to be organized around the specific goal you're trying to help the user achieve. 
 
 ## Categorize using the Diataxis framework
 
@@ -18,6 +20,9 @@ The [Diataxis framework](https://diataxis.fr) is a helpful guide for categorizin
 
 Defining content types helps you plan documentation with a clear purpose and makes it easier for users to find what they need.
 
+<Frame>
+<img src="/images/diataxis.webp" />
+</Frame>
 ## Picking a type
 
 | Question                     | Tutorial             | How-To               | Reference            | Explanation          |
@@ -34,54 +39,52 @@ Defining content types helps you plan documentation with a clear purpose and mak
 
 ## Writing for each type
 
-<AccordionGroup>
-  <Accordion icon="book" title="Tutorials (Learning-oriented)">
-    - **Audience Goal**: Learn something new through step-by-step instructions.
-    - **Characteristics**: Sequential and assumes no prior knowledge.
-    - **Writing Approach**:
-      - Set expectations of what the user will achieve after reading.
-      - Use clear, incremental steps. Minimize choices that need to be made by the user.
-      - Point out milestones throughout, e.g. “you will notice that” or “If this doesn’t show, you probably forgot to”
-      - Minimize theory and focus on concrete actions.
-  </Accordion>
+### Tutorials (Learning-oriented)
 
-    <Accordion icon="gear" title="How-To Guides (Problem-oriented)">
-    - **Audience Goal**: Perform a specific task correctly.
-    - **Characteristics**: Goal-driven and assumes some prior knowledge.
-    - **Writing Approach**:
-      - Write from the perspective of the user, not the product.
-      - Describe a logical sequence, but avoid “duh” statements (e.g. press enter to submit)
-      - Minimize context beyond what’s necessary.
-  </Accordion>
+- **Audience Goal**: Learn something new through step-by-step instructions.
+- **Characteristics**: Sequential and assumes no prior knowledge.
+- **Writing Approach**:
+  - Set expectations of what the user will achieve after reading.
+  - Use clear, incremental steps. Minimize choices that need to be made by the user.
+  - Point out milestones throughout, e.g. “you will notice that” or “If this doesn’t show, you probably forgot to”
+  - Minimize theory and focus on concrete actions.
 
-  <Accordion icon="rectangle-terminal" title="Reference (Information-Oriented)">
-    - **Audience Goal**: Find details about a product’s functionality.
-    - **Characteristics**: Unambiguous, product-focused, scannable.
-    - **Writing Approach**:
-      - Be scannable and concise
-      - Prioritize consistency (e.g. tables, naming, API specs).
-      - Avoid explanatory content. Focus on examples that are easy to copy and modify. 
-    <Note>
-    "Reference documentation should be super scannable. As a developer, you want to find 'how do I do this specific task.' When I get there, I want to be able to clearly understand the parameters." 
-    
-    —Sarah Edwards, Documentation Engineer at Datastax
-    </Note>
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Explanation (Understanding-Oriented)">
-    - **Audience Goal**: Expand general understanding of a concept or highly complex feature.
-    - **Characteristics**: Theoretical, potentially opinionated, broad in scope.
-    - **Writing Approach**:
-      - Provide background context, such as design decisions or technical constraints
-      - Acknowledge opinions and alternatives
-      - Draw connections to other areas in the product or industry
-      <Note>
-        “For complex or multi-threaded releases that touch many parts of your product, you need to provide both practical guidance and conceptual understanding in your documentation. Users need to grasp when and why to use something, not just how.”
+### How-To Guides (Problem-oriented)
 
-        —CT Smith, Head of Docs at Payabli
-      </Note>
-  </Accordion>
+- **Audience Goal**: Perform a specific task correctly.
+- **Characteristics**: Goal-driven and assumes some prior knowledge.
+- **Writing Approach**:
+  - Write from the perspective of the user, not the product.
+  - Describe a logical sequence, but avoid “duh” statements (e.g. press enter to submit)
+  - Minimize context beyond what’s necessary.
 
-</AccordionGroup>
+
+### Reference (Information-oriented)
+
+- **Audience Goal**: Find details about a product’s functionality.
+- **Characteristics**: Unambiguous, product-focused, scannable.
+- **Writing Approach**:
+  - Be scannable and concise
+  - Prioritize consistency (e.g. tables, naming, API specs).
+  - Avoid explanatory content. Focus on examples that are easy to copy and modify.
+
+> Reference documentation should be super scannable. As a developer, you want to find 'how do I do this specific task.' When I get there, I want to be able to clearly understand the parameters.
+> 
+> \- **Sarah Edwards, Documentation Engineer at Datastax**
+
+### Explanation (Understanding-Oriented)
+
+- **Audience Goal**: Expand general understanding of a concept or highly complex feature.
+- **Characteristics**: Theoretical, potentially opinionated, broad in scope.
+- **Writing Approach**:
+  - Provide background context, such as design decisions or technical constraints
+  - Acknowledge opinions and alternatives
+  - Draw connections to other areas in the product or industry
+  <Note>
+    “For complex or multi-threaded releases that touch many parts of your product, you need to provide both practical guidance and conceptual understanding in your documentation. Users need to grasp when and why to use something, not just how.”
+
+    —CT Smith, Head of Docs at Payabli
+  </Note>
 
 ## Tips and tricks
 
@@ -91,8 +94,7 @@ Defining content types helps you plan documentation with a clear purpose and mak
 
 While the Diataxis framework provides a starting point, successful documentation requires contextual adaptation to your product. Start by understanding the framework's principles, then adjust them to serve your users' needs.
 
-<Note> 
-“The trap is to think one framework can rule them all. Don’t be so inflexible in enforcing content types that you forget the reader.” 
 
-—CT Smith, Head of Docs at Payabli
-</Note>
+> The trap is to think one framework can rule them all. Don’t be so inflexible in enforcing content types that you forget the reader.
+> 
+> \- **CT Smith, Head of Docs at Payabli**
