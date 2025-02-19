@@ -3,9 +3,9 @@
   "theme": "willow",
   "name": "Mintlify Guides",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0D9373",
+    "light": "#18E299",
+    "dark": "#0D9373"
   },
   "favicon": "/favicon.svg",
   "fonts": {

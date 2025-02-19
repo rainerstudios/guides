@@ -6,9 +6,13 @@
 }
 
 img[src*="/logo/"] {
-  height: 2rem !important;
+  height: 1.9rem !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500 !important;
+}
+
+.prose :where(img):not(:where([class~=not-prose],[class~=not-prose] *)) {
+  margin-top: 0;
 }
