@@ -21,23 +21,30 @@
   "navigation": {
     "groups": [
       {
-        "group": "Getting Started",
+        "group": "Overview",
         "pages": [
-          "introduction",
-          "content-types",
-          "know-your-audience"
+          "introduction"
+          
         ]
       },
       {
-        "group": "Building Content",
+        "group": "Structure",
+        "pages": [
+          "know-your-audience",
+          "content-types",
+          "navigation"
+          
+        ]
+      },
+      {
+        "group": "Writing",
         "pages": [
           "writing-style-tips",
-          "media",
-          "navigation"
+          "media"
         ]
       },
       {
-        "group": "Post-Launch",
+        "group": "Long-Term",
         "pages": [
           "maintenance",
           "success"
