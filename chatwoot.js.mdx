@@ -1,0 +1,56 @@
+// Chatwoot integration with Mintlify documentation
+(function(d,t) {
+  // Replace with your actual Chatwoot installation URL
+  var BASE_URL = "https://app.chatwoot.com";
+  
+  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src= BASE_URL + "/packs/js/sdk.js";
+  g.defer = true;
+  g.async = true;
+  s.parentNode.insertBefore(g,s);
+  
+  g.onload=function(){
+    window.chatwootSDK.run({
+      // Replace with your actual Chatwoot website token
+      websiteToken: 'YOUR_WEBSITE_TOKEN',
+      baseUrl: BASE_URL,
+      
+      // Pass current page context to Chatwoot for better support
+      customAttributes: {
+        // Pass the current page path for context
+        page_path: window.location.pathname,
+        // Pass the page title for context
+        page_title: document.title,
+        // Pass section if it can be determined
+        section: window.location.pathname.split('/')[1] || 'home'
+      }
+    });
+    
+    // Listen for page navigation to update context
+    // This is for SPAs that use history API
+    if (window.history && window.history.pushState) {
+      const originalPushState = window.history.pushState;
+      window.history.pushState = function() {
+        originalPushState.apply(window.history, arguments);
+        updateChatwootContext();
+      };
+      
+      window.addEventListener('popstate', function() {
+        updateChatwootContext();
+      });
+    }
+    
+    // Function to update Chatwoot context when page changes
+    function updateChatwootContext() {
+      setTimeout(function() {
+        if (window.$chatwoot) {
+          window.$chatwoot.setCustomAttributes({
+            page_path: window.location.pathname,
+            page_title: document.title,
+            section: window.location.pathname.split('/')[1] || 'home'
+          });
+        }
+      }, 300);
+    }
+  }
+})(document,"script");
